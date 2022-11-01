@@ -23,19 +23,16 @@
 	</head>
 	<body>
 		<div id=puzzle>
-			<input type=button value='Г'>
-			<input type=button value='Д'>
-			<input type=button value='Е'>
-			<input type=button value='Е'>
-		        <input type=button value='С'>
-			<input type=button value='Т'>
-			<input type=button value='Ж'>
-			<input type=button value='У'>
-			<input type=button value=''>
+			
 			
 
 	        </div>
 		<script>
+			for (i=0; i < 9; i++)
+				btn = document.createElement("input");
+				btn.type = "button";
+				btn.value = "Ж";
+				document.getElementById('puzzle').appendChild(btn);
 		</script>
 	</body>
 </html>
