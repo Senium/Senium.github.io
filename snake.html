@@ -25,16 +25,13 @@
 	</head>
 	<body>
 		<div id=puzzle>
-			
-			
-
 	        </div>
 		<script>
 			for (i=0; i < 9; i++){
 				btn[i] = document.createElement("input");
 				btn[i].type = "button";
 				btn[i].value = letter[i];
-				document.getElementById('puzzle').appendChild(btn);
+				document.getElementById('puzzle').appendChild(btn[i]);
 			}
 		</script>
 	</body>
