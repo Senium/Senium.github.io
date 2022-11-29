@@ -18,6 +18,9 @@
 		<script>
 			letter = Array.from("012345678");
 			btn = new Array(9);
+			function play(B) {
+			console.log(B) 
+			}
 		</script>
 	</head>
 	<body>
@@ -28,6 +31,7 @@
 				btn[i] = document.createElement("input");
 				btn[i].type = "button";
 				btn[i].value = letter[i];
+				btn[i].onclick = function() {play(this)};
 				document.getElementById('puzzle').appendChild(btn[i]);
 			}
 		</script>
