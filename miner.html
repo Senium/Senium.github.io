@@ -25,6 +25,9 @@
 			function play(B){
 				n = btn.indexOf(B);
 				console.log(n)
+				if(playArea[n] == 1){
+					btn[i].value = "M";
+					}
 			}
 		</script>
 	</head>
@@ -36,7 +39,7 @@
 				
 				btn[i] = document.createElement("input");
 				btn[i].type = "button";
-				btn[i].value = letter[i];
+				btn[i].value = " ";
 				btn[i].onclick = function() {play(this)};
 				document.getElementById('puzzle').appendChild(btn[i]);
 			}
