@@ -17,9 +17,11 @@
 		</style>
 		<script>
 			numberOfButtons = 100;
-			letter = Array.from("012345678");
-			letter.sort(()=>Math.random()-0.5)
-			btn = new Array(numberOfButtons);
+			
+			playArea.sort(()=>Math.random()-0.5)
+			
+			playArea = Array(numberOfButtons)
+			mines = 21
 			function play(B){
 				n = btn.indexOf(B);
 				console.log(n)
@@ -31,6 +33,7 @@
 		</div>
 		<script>
 			for(i=0; i<numberOfButtons; i++){
+				
 				btn[i] = document.createElement("input");
 				btn[i].type = "button";
 				btn[i].value = letter[i];
