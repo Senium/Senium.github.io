@@ -17,11 +17,14 @@
 		</style>
 		<script>
 			numberOfButtons = 100;
-			
+			mines = 21
+			playArea = Array(numberOfButtons)
+			btn = new Array(numberOfButtons)
+			for(i = 0; i < numberOfButtons; i++){
+				playArea[i] ? 1 : 0;
+			}
 			playArea.sort(()=>Math.random()-0.5)
 			
-			playArea = Array(numberOfButtons)
-			mines = 21
 			function play(B){
 				n = btn.indexOf(B);
 				console.log(n)
