@@ -21,7 +21,7 @@
 			playArea = Array(numberOfButtons)
 			btn = new Array(numberOfButtons)
 			for(i = 0; i < numberOfButtons; i++){
-				playArea[i] ? 1 : 0;
+				playArea[i] = i<mines ? 1 : 0;
 			}
 			playArea.sort(()=>Math.random()-0.5)
 			
