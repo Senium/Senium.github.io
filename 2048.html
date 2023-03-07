@@ -17,20 +17,21 @@
 		</style>
 		<script>
 			numberOfButtons = 16;
-			playArea = new Array(numberOfButtons)
+			playGround = new Array(numberOfButtons)
 			for(i=0, i<numberOfButtons; i++){
-				playArea[i] = 0 
+				playGround[i] = 0 
 			}
-			playArea[8] = 2;
-			playArea.sort(()=>Math.random()-0.5)
+			playGround[0] = 2;
+			playGround[1] = 2;
+			playGround.sort(()=>Math.random()-0.5)
 			btn = new Array(numberOfButtons);
 			function play(B){
 				n = btn.indexOf(B);
 				console.log(n)
-				a = new Array(0)
+				
 				for(i = 0, i < numberOfButtons; i++ ){
 					if(playArea[i] == 0){
-						a.concat([playArea[i]])
+						a.concat([playGround[i]])
 					}
 				
 				}
